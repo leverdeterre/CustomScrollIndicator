@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
         :tag => "0.0.2"
         }
 
-        s.source_files = 'CustomScrollIndicator/CustomScrollViewIndicator/CustomScrollViewIndicator/UIScrollView+ScrollIndicator*.{h,m}'
+        s.source_files = 'CustomScrollIndicator/CustomScrollViewIndicator/CustomScrollViewIndicator/UIScrollView+ScrollIndicator.{h,m}'
         s.frameworks    = 'QuartzCore'
 end
