@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
         :git => 'https://github.com/leverdeterre/CustomScrollIndicator.git',
         :tag => "0.0.1"
         }
-        s.source_files = 'CustomScrollIndicator/CustomScrollViewIndicator/UIScrollView+ScrollIndicator*.{h,m}'
+        s.source_files = 'CustomScrollViewIndicator/CustomScrollViewIndicator/UIScrollView+ScrollIndicator.{h,m}'
         s.frameworks    = 'QuartzCore'
 end
