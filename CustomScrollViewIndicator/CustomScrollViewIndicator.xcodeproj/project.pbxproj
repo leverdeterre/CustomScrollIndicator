@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C20CA4C9181B0D5A008DD993 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20CA4C8181B0D5A008DD993 /* UIKit.framework */; };
+		C20CA4CB181B0D5B008DD993 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20CA4CA181B0D5B008DD993 /* Foundation.framework */; };
+		C20CA4CD181B0D5B008DD993 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20CA4CC181B0D5B008DD993 /* CoreGraphics.framework */; };
+		C20CA4D3181B0D5B008DD993 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4D1181B0D5B008DD993 /* InfoPlist.strings */; };
+		C20CA4D5181B0D5B008DD993 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C20CA4D4181B0D5B008DD993 /* main.m */; };
+		C20CA4D9181B0D5B008DD993 /* JMOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C20CA4D8181B0D5B008DD993 /* JMOAppDelegate.m */; };
+		C20CA4DB181B0D5B008DD993 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4DA181B0D5B008DD993 /* Default.png */; };
+		C20CA4DD181B0D5B008DD993 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4DC181B0D5B008DD993 /* Default@2x.png */; };
+		C20CA4DF181B0D5B008DD993 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4DE181B0D5B008DD993 /* Default-568h@2x.png */; };
+		C20CA4E2181B0D5B008DD993 /* JMOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20CA4E1181B0D5B008DD993 /* JMOViewController.m */; };
+		C20CA4E5181B0D5B008DD993 /* JMOViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4E3181B0D5B008DD993 /* JMOViewController_iPhone.xib */; };
+		C20CA4E8181B0D5B008DD993 /* JMOViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4E6181B0D5B008DD993 /* JMOViewController_iPad.xib */; };
+		C20CA4F0181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C20CA4EF181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m */; };
+		C20CA4F2181B0FBB008DD993 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20CA4F1181B0FBB008DD993 /* QuickLook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C20CA4C5181B0D5A008DD993 /* CustomScrollViewIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomScrollViewIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20CA4C8181B0D5A008DD993 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C20CA4CA181B0D5B008DD993 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C20CA4CC181B0D5B008DD993 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C20CA4D0181B0D5B008DD993 /* CustomScrollViewIndicator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomScrollViewIndicator-Info.plist"; sourceTree = "<group>"; };
+		C20CA4D2181B0D5B008DD993 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C20CA4D4181B0D5B008DD993 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C20CA4D6181B0D5B008DD993 /* CustomScrollViewIndicator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomScrollViewIndicator-Prefix.pch"; sourceTree = "<group>"; };
+		C20CA4D7181B0D5B008DD993 /* JMOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMOAppDelegate.h; sourceTree = "<group>"; };
+		C20CA4D8181B0D5B008DD993 /* JMOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMOAppDelegate.m; sourceTree = "<group>"; };
+		C20CA4DA181B0D5B008DD993 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C20CA4DC181B0D5B008DD993 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C20CA4DE181B0D5B008DD993 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C20CA4E0181B0D5B008DD993 /* JMOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMOViewController.h; sourceTree = "<group>"; };
+		C20CA4E1181B0D5B008DD993 /* JMOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMOViewController.m; sourceTree = "<group>"; };
+		C20CA4E4181B0D5B008DD993 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JMOViewController_iPhone.xib; sourceTree = "<group>"; };
+		C20CA4E7181B0D5B008DD993 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JMOViewController_iPad.xib; sourceTree = "<group>"; };
+		C20CA4EE181B0DF4008DD993 /* UIScrollView+ScrollIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScrollIndicator.h"; sourceTree = "<group>"; };
+		C20CA4EF181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScrollIndicator.m"; sourceTree = "<group>"; };
+		C20CA4F1181B0FBB008DD993 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C20CA4C2181B0D5A008DD993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20CA4F2181B0FBB008DD993 /* QuickLook.framework in Frameworks */,
+				C20CA4C9181B0D5A008DD993 /* UIKit.framework in Frameworks */,
+				C20CA4CB181B0D5B008DD993 /* Foundation.framework in Frameworks */,
+				C20CA4CD181B0D5B008DD993 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C20CA4BC181B0D5A008DD993 = {
+			isa = PBXGroup;
+			children = (
+				C20CA4CE181B0D5B008DD993 /* CustomScrollViewIndicator */,
+				C20CA4C7181B0D5A008DD993 /* Frameworks */,
+				C20CA4C6181B0D5A008DD993 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C20CA4C6181B0D5A008DD993 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C20CA4C5181B0D5A008DD993 /* CustomScrollViewIndicator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C20CA4C7181B0D5A008DD993 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C20CA4F1181B0FBB008DD993 /* QuickLook.framework */,
+				C20CA4C8181B0D5A008DD993 /* UIKit.framework */,
+				C20CA4CA181B0D5B008DD993 /* Foundation.framework */,
+				C20CA4CC181B0D5B008DD993 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C20CA4CE181B0D5B008DD993 /* CustomScrollViewIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				C20CA4D7181B0D5B008DD993 /* JMOAppDelegate.h */,
+				C20CA4D8181B0D5B008DD993 /* JMOAppDelegate.m */,
+				C20CA4E0181B0D5B008DD993 /* JMOViewController.h */,
+				C20CA4E1181B0D5B008DD993 /* JMOViewController.m */,
+				C20CA4EE181B0DF4008DD993 /* UIScrollView+ScrollIndicator.h */,
+				C20CA4EF181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m */,
+				C20CA4E3181B0D5B008DD993 /* JMOViewController_iPhone.xib */,
+				C20CA4E6181B0D5B008DD993 /* JMOViewController_iPad.xib */,
+				C20CA4CF181B0D5B008DD993 /* Supporting Files */,
+			);
+			path = CustomScrollViewIndicator;
+			sourceTree = "<group>";
+		};
+		C20CA4CF181B0D5B008DD993 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C20CA4D0181B0D5B008DD993 /* CustomScrollViewIndicator-Info.plist */,
+				C20CA4D1181B0D5B008DD993 /* InfoPlist.strings */,
+				C20CA4D4181B0D5B008DD993 /* main.m */,
+				C20CA4D6181B0D5B008DD993 /* CustomScrollViewIndicator-Prefix.pch */,
+				C20CA4DA181B0D5B008DD993 /* Default.png */,
+				C20CA4DC181B0D5B008DD993 /* Default@2x.png */,
+				C20CA4DE181B0D5B008DD993 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C20CA4C4181B0D5A008DD993 /* CustomScrollViewIndicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C20CA4EB181B0D5B008DD993 /* Build configuration list for PBXNativeTarget "CustomScrollViewIndicator" */;
+			buildPhases = (
+				C20CA4C1181B0D5A008DD993 /* Sources */,
+				C20CA4C2181B0D5A008DD993 /* Frameworks */,
+				C20CA4C3181B0D5A008DD993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomScrollViewIndicator;
+			productName = CustomScrollViewIndicator;
+			productReference = C20CA4C5181B0D5A008DD993 /* CustomScrollViewIndicator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C20CA4BD181B0D5A008DD993 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JMO;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jerome Morissard";
+			};
+			buildConfigurationList = C20CA4C0181B0D5A008DD993 /* Build configuration list for PBXProject "CustomScrollViewIndicator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C20CA4BC181B0D5A008DD993;
+			productRefGroup = C20CA4C6181B0D5A008DD993 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C20CA4C4181B0D5A008DD993 /* CustomScrollViewIndicator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C20CA4C3181B0D5A008DD993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20CA4D3181B0D5B008DD993 /* InfoPlist.strings in Resources */,
+				C20CA4DB181B0D5B008DD993 /* Default.png in Resources */,
+				C20CA4DD181B0D5B008DD993 /* Default@2x.png in Resources */,
+				C20CA4DF181B0D5B008DD993 /* Default-568h@2x.png in Resources */,
+				C20CA4E5181B0D5B008DD993 /* JMOViewController_iPhone.xib in Resources */,
+				C20CA4E8181B0D5B008DD993 /* JMOViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C20CA4C1181B0D5A008DD993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20CA4D5181B0D5B008DD993 /* main.m in Sources */,
+				C20CA4D9181B0D5B008DD993 /* JMOAppDelegate.m in Sources */,
+				C20CA4E2181B0D5B008DD993 /* JMOViewController.m in Sources */,
+				C20CA4F0181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C20CA4D1181B0D5B008DD993 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C20CA4D2181B0D5B008DD993 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C20CA4E3181B0D5B008DD993 /* JMOViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C20CA4E4181B0D5B008DD993 /* en */,
+			);
+			name = JMOViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		C20CA4E6181B0D5B008DD993 /* JMOViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C20CA4E7181B0D5B008DD993 /* en */,
+			);
+			name = JMOViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C20CA4E9181B0D5B008DD993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C20CA4EA181B0D5B008DD993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C20CA4EC181B0D5B008DD993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomScrollViewIndicator/CustomScrollViewIndicator-Prefix.pch";
+				INFOPLIST_FILE = "CustomScrollViewIndicator/CustomScrollViewIndicator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C20CA4ED181B0D5B008DD993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomScrollViewIndicator/CustomScrollViewIndicator-Prefix.pch";
+				INFOPLIST_FILE = "CustomScrollViewIndicator/CustomScrollViewIndicator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C20CA4C0181B0D5A008DD993 /* Build configuration list for PBXProject "CustomScrollViewIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20CA4E9181B0D5B008DD993 /* Debug */,
+				C20CA4EA181B0D5B008DD993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C20CA4EB181B0D5B008DD993 /* Build configuration list for PBXNativeTarget "CustomScrollViewIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20CA4EC181B0D5B008DD993 /* Debug */,
+				C20CA4ED181B0D5B008DD993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C20CA4BD181B0D5A008DD993 /* Project object */;
+}
