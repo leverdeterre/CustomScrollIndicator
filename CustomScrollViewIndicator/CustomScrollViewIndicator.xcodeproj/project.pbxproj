@@ -20,7 +20,7 @@
 		C20CA4E5181B0D5B008DD993 /* JMOViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4E3181B0D5B008DD993 /* JMOViewController_iPhone.xib */; };
 		C20CA4E8181B0D5B008DD993 /* JMOViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4E6181B0D5B008DD993 /* JMOViewController_iPad.xib */; };
 		C20CA4F0181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C20CA4EF181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m */; };
-		C20CA4F2181B0FBB008DD993 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20CA4F1181B0FBB008DD993 /* QuickLook.framework */; };
+		C20CA4F4181B9BFD008DD993 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20CA4F3181B9BFD008DD993 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		C20CA4E7181B0D5B008DD993 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JMOViewController_iPad.xib; sourceTree = "<group>"; };
 		C20CA4EE181B0DF4008DD993 /* UIScrollView+ScrollIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScrollIndicator.h"; sourceTree = "<group>"; };
 		C20CA4EF181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScrollIndicator.m"; sourceTree = "<group>"; };
-		C20CA4F1181B0FBB008DD993 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		C20CA4F3181B9BFD008DD993 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20CA4F2181B0FBB008DD993 /* QuickLook.framework in Frameworks */,
+				C20CA4F4181B9BFD008DD993 /* QuartzCore.framework in Frameworks */,
 				C20CA4C9181B0D5A008DD993 /* UIKit.framework in Frameworks */,
 				C20CA4CB181B0D5B008DD993 /* Foundation.framework in Frameworks */,
 				C20CA4CD181B0D5B008DD993 /* CoreGraphics.framework in Frameworks */,
@@ -81,7 +81,7 @@
 		C20CA4C7181B0D5A008DD993 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C20CA4F1181B0FBB008DD993 /* QuickLook.framework */,
+				C20CA4F3181B9BFD008DD993 /* QuartzCore.framework */,
 				C20CA4C8181B0D5A008DD993 /* UIKit.framework */,
 				C20CA4CA181B0D5B008DD993 /* Foundation.framework */,
 				C20CA4CC181B0D5B008DD993 /* CoreGraphics.framework */,
@@ -323,6 +323,7 @@
 				C20CA4ED181B0D5B008DD993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
