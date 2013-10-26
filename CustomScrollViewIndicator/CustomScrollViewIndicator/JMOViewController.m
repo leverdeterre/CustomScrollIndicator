@@ -28,7 +28,7 @@
     self.scrollView.delegate = self;
     [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width*3, self.view.frame.size.height)];
     [self.scrollView setScrollEnabled:YES];
-    [self.scrollView enableCustomHorizontalWithScrollVerticalIndicator:JMOVerticalScrollIndicatorPositionRight withHorizontalIndicator:JMOHorizontalScrollIndicatorPositionBottom withColor:[[UIColor grayColor] colorWithAlphaComponent:0.5]];
+    [self.scrollView enableCustomHorizontalWithScrollVerticalIndicator:JMOVerticalScrollIndicatorPositionRight withHorizontalIndicator:JMOHorizontalScrollIndicatorPositionTop withColor:[[UIColor blackColor] colorWithAlphaComponent:0.5] withIndicatorStyle:JMOScrollIndicatorTypePageControl];
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation

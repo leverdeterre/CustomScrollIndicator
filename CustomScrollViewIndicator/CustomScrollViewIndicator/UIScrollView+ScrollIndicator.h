@@ -18,10 +18,15 @@ typedef enum {
     JMOHorizontalScrollIndicatorPositionTop
 } JMOHorizontalScrollIndicatorPosition;
 
+typedef enum {
+    JMOScrollIndicatorTypeDefault = 0, //Default
+    JMOScrollIndicatorTypePageControl
+} JMOScrollIndicatorType;
+
 @interface UIScrollView (ScrollIndicator)
 
 -(void) enableCustomHorizontalScroll;
--(void) enableCustomHorizontalWithScrollVerticalIndicator:(JMOVerticalScrollIndicatorPosition)vPos withHorizontalIndicator:(JMOHorizontalScrollIndicatorPosition)hPos withColor:(UIColor *)indicatorColor;
+- (void) enableCustomHorizontalWithScrollVerticalIndicator:(JMOVerticalScrollIndicatorPosition)vPos withHorizontalIndicator:(JMOHorizontalScrollIndicatorPosition)hPos withColor:(UIColor *)indicatorColor withIndicatorStyle:(JMOScrollIndicatorType)style;
 
 -(void) refreshCustomScrollIndicator;
 -(void) refreshCustomScrollIndicatorWithAlpha:(CGFloat)alpha;
