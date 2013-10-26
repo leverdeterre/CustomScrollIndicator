@@ -3,6 +3,9 @@ An iOS customizable ScrollIndicator
 - allows to customize UIScrollView scroll indicators, 
 - Only one category
 
+![Image](demo.png)
+
+
 ### Enum to configure indicator positions
 
 ```objective-c
