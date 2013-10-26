@@ -14,14 +14,15 @@ typedef enum {
 ```
 ### Usage ... very simple, just enable the customization (with default parameters)
 ```objective-c
-[self.scrollView enableCustomHorizontalScroll];
+[scrollView enableCustomHorizontalScroll];
 ```
 
 ###  With options 
 ```objective-c
-[self.scrollView enableCustomHorizontalWithScrollVerticalIndicator:JMOVerticalScrollIndicatorPositionRight 
-                                           withHorizontalIndicator:JMOHorizontalScrollIndicatorPositionBottom 
-                                           withColor:[UIColor grayColor]];
+[scrollView 
+        enableCustomHorizontalWithScrollVerticalIndicator:JMOVerticalScrollIndicatorPositionRight 
+                              withHorizontalIndicator:JMOHorizontalScrollIndicatorPositionBottom 
+                              withColor:[UIColor grayColor]];
     
 ```
 
@@ -30,13 +31,13 @@ typedef enum {
 ```objective-c
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    [self.scrollView refreshCustomScrollIndicator];
+    [scrollView refreshCustomScrollIndicator];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     [UIView animateWithDuration:0.25 animations:^{
-        [self.scrollView refreshCustomScrollIndicatorWithAlpha:0.0];
+        [scrollView refreshCustomScrollIndicatorWithAlpha:0.0];
     }];
 }
     
