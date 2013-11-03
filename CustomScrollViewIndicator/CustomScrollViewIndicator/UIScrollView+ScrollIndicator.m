@@ -121,6 +121,10 @@ static char viewScrollIndicatorTypeKey;
         [self setViewHForHorizontalScrollIndicator:pageCOntrol];
         [self addSubview:pageCOntrol];
     }
+    
+    [self addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:NULL];
+    [self addObserver:self forKeyPath:@"contentOffset" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:NULL];
+
 }
 
 - (void) enableCustomHorizontalScroll
@@ -158,6 +162,32 @@ static char viewScrollIndicatorTypeKey;
 - (void)refreshCustomScrollIndicator
 {
     [self refreshCustomScrollIndicatorWithAlpha:1.0f];
+}
+
+
+
+- (void)dealloc
+{
+    [self removeObserver:self forKeyPath:@"contentSize"];
+}
+
+#pragma mark - KVO
+
+- (void) observeValueForKeyPath: (NSString *) keyPath ofObject: (id) object change: (NSDictionary *) change context: (void *) context
+{
+    if (self.contentSize.width > 0.0f) {
+        [self refreshCustomScrollIndicatorWithAlpha:1.0f];
+        
+        /*
+        UIView *viewScrollIndicator = [self getViewForHorizontalScrollIndicator];
+        CGRect rect =  self.frame;
+        CGFloat pourcent = self.contentOffset.x / self.contentSize.width;
+        viewScrollIndicator.hidden = self.contentSize.width < self.frame.size.width;
+        rect.size.width = self.frame.size.width * (self.frame.size.width / self.contentSize.width);
+        rect.origin.x = pourcent * self.frame.size.width;
+        viewScrollIndicator.frame = rect;
+         */
+    }
 }
 
 

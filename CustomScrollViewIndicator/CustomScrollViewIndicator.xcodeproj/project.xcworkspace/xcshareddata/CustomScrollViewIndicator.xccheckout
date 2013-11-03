@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>008C2C57-96CD-4A47-B5A6-B18D3DC9FE19</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CustomScrollViewIndicator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7B2192EE-4AC6-44F0-A7F5-FCFADE16024C</key>
+		<string>https://github.com/leverdeterre/CustomScrollIndicator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CustomScrollViewIndicator/CustomScrollViewIndicator.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7B2192EE-4AC6-44F0-A7F5-FCFADE16024C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/leverdeterre/CustomScrollIndicator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7B2192EE-4AC6-44F0-A7F5-FCFADE16024C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7B2192EE-4AC6-44F0-A7F5-FCFADE16024C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CustomScrollIndicator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
