@@ -15,6 +15,18 @@ typedef enum {
 } JMOHorizontalScrollIndicatorPosition;
 
 ```
+
+
+### Enum to configure indicator type
+
+```objective-c
+typedef enum {
+    JMOScrollIndicatorTypeDefault = 0, //Default
+    JMOScrollIndicatorTypePageControl
+} JMOScrollIndicatorType;
+
+```
+
 ### Usage ... very simple, just enable the customization (with default parameters)
 ```objective-c
 [scrollView enableCustomHorizontalScroll];
@@ -25,7 +37,8 @@ typedef enum {
 [scrollView 
         enableCustomHorizontalWithScrollVerticalIndicator:JMOVerticalScrollIndicatorPositionRight 
                               withHorizontalIndicator:JMOHorizontalScrollIndicatorPositionBottom 
-                              withColor:[UIColor grayColor]];
+                              withColor:[UIColor grayColor]
+                              withIndicatorStyle:JMOScrollIndicatorTypePageControl];
     
 ```
 
