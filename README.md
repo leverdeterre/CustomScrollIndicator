@@ -11,9 +11,11 @@ An iOS customizable ScrollIndicator
 
 ```objective-c
 typedef enum {
-    JMOHorizontalScrollIndicatorPositionBottom = 0, //Default
-    JMOHorizontalScrollIndicatorPositionTop
-} JMOHorizontalScrollIndicatorPosition;
+  JMOVerticalScrollIndicatorPositionRight = 1 << 0, //Default for vertical
+  JMOVerticalScrollIndicatorPositionLeft = 1 << 1,
+  JMOHorizontalScrollIndicatorPositionBottom = 1 << 2, //Default for horizontal
+  JMOHorizontalScrollIndicatorPositionTop = 1 << 3,
+} JMOScrollIndicatorPosition;
 
 ```
 
@@ -22,7 +24,7 @@ typedef enum {
 
 ```objective-c
 typedef enum {
-    JMOScrollIndicatorTypeDefault = 0, //Default
+    JMOScrollIndicatorTypeClassic = 0, //Default
     JMOScrollIndicatorTypePageControl
 } JMOScrollIndicatorType;
 
@@ -35,26 +37,24 @@ typedef enum {
 
 ###  With options 
 ```objective-c
-[scrollView 
-        enableCustomHorizontalWithScrollVerticalIndicator:JMOVerticalScrollIndicatorPositionRight 
-                              withHorizontalIndicator:JMOHorizontalScrollIndicatorPositionBottom 
-                              withColor:[UIColor grayColor]
-                              withIndicatorStyle:JMOScrollIndicatorTypePageControl];
+ [scrollView4 enableCustomScrollIndicatorsWithScrollIndicatorType:JMOScrollIndicatorTypeClassic 
+              positions:JMOHorizontalScrollIndicatorPositionTop 
+              color:[UIColor orangeColor]];
     
 ```
 
-###  Refresh ... call methods in your scrollViewDelegate 
+###  Refresh ... call methods in your scrollViewDelegate (scrollViewDidScroll is optionnal, KVO did the job)
 
 ```objective-c
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    [scrollView refreshCustomScrollIndicator];
+    [scrollView refreshCustomScrollIndicatorsWithAlpha];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     [UIView animateWithDuration:0.25 animations:^{
-        [scrollView refreshCustomScrollIndicatorWithAlpha:0.0];
+        [scrollView refreshCustomScrollIndicatorsWithAlpha:0.0];
     }];
 }
     
