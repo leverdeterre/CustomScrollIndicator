@@ -9,26 +9,22 @@
 #import <UIKit/UIKit.h>
 
 typedef enum {
-  JMOVerticalScrollIndicatorPositionRight = 0, //Default
-  JMOVerticalScrollIndicatorPositionLeft
-} JMOVerticalScrollIndicatorPosition;
+  JMOVerticalScrollIndicatorPositionRight = 1 << 0, //Default for vertical
+  JMOVerticalScrollIndicatorPositionLeft = 1 << 1,
+  JMOHorizontalScrollIndicatorPositionBottom = 1 << 2, //Default for horizontal
+  JMOHorizontalScrollIndicatorPositionTop = 1 << 3,
+} JMOScrollIndicatorPosition;
+
 
 typedef enum {
-    JMOHorizontalScrollIndicatorPositionBottom = 0, //Default
-    JMOHorizontalScrollIndicatorPositionTop
-} JMOHorizontalScrollIndicatorPosition;
-
-typedef enum {
-    JMOScrollIndicatorTypeDefault = 0, //Default
+    JMOScrollIndicatorTypeClassic = 0, //Default
     JMOScrollIndicatorTypePageControl
 } JMOScrollIndicatorType;
 
 @interface UIScrollView (ScrollIndicator)
 
--(void) enableCustomHorizontalScroll;
-- (void) enableCustomHorizontalWithScrollVerticalIndicator:(JMOVerticalScrollIndicatorPosition)vPos withHorizontalIndicator:(JMOHorizontalScrollIndicatorPosition)hPos withColor:(UIColor *)indicatorColor withIndicatorStyle:(JMOScrollIndicatorType)style;
-
--(void) refreshCustomScrollIndicator;
--(void) refreshCustomScrollIndicatorWithAlpha:(CGFloat)alpha;
+-(void) enableCustomScrollIndicatorsWithScrollIndicatorType:(JMOScrollIndicatorType)type positions:(JMOScrollIndicatorPosition)positions color:(UIColor *)color;
+-(void) refreshCustomScrollIndicators;
+-(void) refreshCustomScrollIndicatorsWithAlpha:(CGFloat)alpha;
 
 @end
