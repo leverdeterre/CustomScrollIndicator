@@ -4,6 +4,7 @@ An iOS customizable ScrollIndicator
 - Only one category
 
 ![Image](demo.png)
+![Image](demo.gif)
 
 
 ### Enum to configure indicator positions
