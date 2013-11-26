@@ -261,9 +261,18 @@ static char viewScrollIndicatorTypeKey;
     [self refreshCustomScrollIndicatorsWithAlpha:1.0f];
 }
 
-- (void)dealloc
+
+-(void)disableCustomScrollIndicator
 {
-    [self removeKVOObservers];
+    @try {
+        [self removeKVOObservers];
+    }
+    @catch (NSException *exception) {
+        
+    }
+    @finally {
+        
+    }
 }
 
 #pragma mark - KVO

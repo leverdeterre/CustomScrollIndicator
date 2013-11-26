@@ -57,4 +57,12 @@
     }];
 }
 
+- (void)dealloc
+{
+    [self.scrollView1 disableCustomScrollIndicator];
+    [self.scrollView2 disableCustomScrollIndicator];
+    [self.scrollView3 disableCustomScrollIndicator];
+    [self.scrollView4 disableCustomScrollIndicator];
+}
+
 @end

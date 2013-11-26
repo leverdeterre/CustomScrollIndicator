@@ -23,8 +23,10 @@ typedef enum {
 
 @interface UIScrollView (ScrollIndicator)
 
--(void) enableCustomScrollIndicatorsWithScrollIndicatorType:(JMOScrollIndicatorType)type positions:(JMOScrollIndicatorPosition)positions color:(UIColor *)color;
--(void) refreshCustomScrollIndicators;
--(void) refreshCustomScrollIndicatorsWithAlpha:(CGFloat)alpha;
+-(void)enableCustomScrollIndicatorsWithScrollIndicatorType:(JMOScrollIndicatorType)type positions:(JMOScrollIndicatorPosition)positions color:(UIColor *)color;
+-(void)disableCustomScrollIndicator;
+
+-(void)refreshCustomScrollIndicators;
+-(void)refreshCustomScrollIndicatorsWithAlpha:(CGFloat)alpha;
 
 @end
