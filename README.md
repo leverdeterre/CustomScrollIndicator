@@ -1,5 +1,11 @@
 An iOS customizable ScrollIndicator
 
+[![Twitter](https://img.shields.io/badge/contact-@leverdeterre-green.svg)](http://twitter.com/leverdeterre)
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg)](http://github.com/leverdeterre/CustomScrollIndicator/LICENSE)
+[![CocoaPods](http://img.shields.io/github/release/leverdeterre/CustomScrollIndicator.svg)](https://github.com/CustomScrollIndicator)
+
+
+
 - allows to customize UIScrollView scroll indicators, 
 - Only one category
 
@@ -11,10 +17,10 @@ An iOS customizable ScrollIndicator
 
 ```objective-c
 typedef enum {
-  JMOVerticalScrollIndicatorPositionRight = 1 << 0, //Default for vertical
-  JMOVerticalScrollIndicatorPositionLeft = 1 << 1,
-  JMOHorizontalScrollIndicatorPositionBottom = 1 << 2, //Default for horizontal
-  JMOHorizontalScrollIndicatorPositionTop = 1 << 3,
+  JMOVerticalScrollIndicatorPositionRight     = 1 << 0, //Default for vertical
+  JMOVerticalScrollIndicatorPositionLeft      = 1 << 1,
+  JMOHorizontalScrollIndicatorPositionBottom  = 1 << 2, //Default for horizontal
+  JMOHorizontalScrollIndicatorPositionTop     = 1 << 3,
 } JMOScrollIndicatorPosition;
 
 ```
