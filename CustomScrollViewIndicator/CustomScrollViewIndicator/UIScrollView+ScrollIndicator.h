@@ -8,18 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-  JMOVerticalScrollIndicatorPositionRight = 1 << 0, //Default for vertical
-  JMOVerticalScrollIndicatorPositionLeft = 1 << 1,
-  JMOHorizontalScrollIndicatorPositionBottom = 1 << 2, //Default for horizontal
-  JMOHorizontalScrollIndicatorPositionTop = 1 << 3,
-} JMOScrollIndicatorPosition;
+typedef NS_OPTIONS(NSUInteger, JMOScrollIndicatorPosition) {
+    JMOVerticalScrollIndicatorPositionRight = 1 << 0, //Default for vertical
+    JMOVerticalScrollIndicatorPositionLeft = 1 << 1,
+    JMOHorizontalScrollIndicatorPositionBottom = 1 << 2, //Default for horizontal
+    JMOHorizontalScrollIndicatorPositionTop = 1 << 3
+};
 
-
-typedef enum {
+typedef NS_ENUM(NSUInteger, JMOScrollIndicatorType) {
     JMOScrollIndicatorTypeClassic = 0, //Default
     JMOScrollIndicatorTypePageControl
-} JMOScrollIndicatorType;
+};
 
 @interface UIScrollView (ScrollIndicator)
 

@@ -52,7 +52,7 @@ static char viewScrollIndicatorTypeKey;
 
 - (JMOScrollIndicatorPosition)getVerticalIndicatorPosition
 {
-    return [objc_getAssociatedObject(self, &viewScrollIndicatorVerticalPosKey) integerValue];
+    return (int)[objc_getAssociatedObject(self, &viewScrollIndicatorVerticalPosKey) integerValue];
 }
 
 - (void) setHorizontalIndicatorPosition:(JMOScrollIndicatorPosition)position {
@@ -61,7 +61,7 @@ static char viewScrollIndicatorTypeKey;
 
 - (JMOScrollIndicatorPosition)getHorizontalIndicatorPosition
 {
-    return [objc_getAssociatedObject(self, &viewScrollIndicatorHorizontalPosKey) integerValue];
+    return (int)[objc_getAssociatedObject(self, &viewScrollIndicatorHorizontalPosKey) integerValue];
 }
 
 - (void) setScrollIndicatorType:(JMOScrollIndicatorType)type
@@ -71,7 +71,7 @@ static char viewScrollIndicatorTypeKey;
 
 - (JMOScrollIndicatorType)getScrollIndicatorType
 {
-    return [objc_getAssociatedObject(self, &viewScrollIndicatorTypeKey) integerValue];
+    return (int)[objc_getAssociatedObject(self, &viewScrollIndicatorTypeKey) integerValue];
 }
 
 #pragma mark -
