@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JMOViewController">
+            <connections>
+                <outlet property="scrollView1" destination="8" id="3TR-GL-CmO"/>
+                <outlet property="scrollView2" destination="ciH-a7-nkb" id="cy8-Yg-9gH"/>
+                <outlet property="view" destination="6" id="7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                    <rect key="frame" x="15" y="20" width="345" height="309.5"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciH-a7-nkb">
+                    <rect key="frame" x="15" y="337.5" width="344" height="309.5"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.75" green="0.75" blue="0.75" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="15" id="5mn-5J-Qce"/>
+                <constraint firstAttribute="trailing" secondItem="8" secondAttribute="trailing" constant="15" id="CZK-ba-JsZ"/>
+                <constraint firstAttribute="bottom" secondItem="ciH-a7-nkb" secondAttribute="bottom" constant="20" id="Du4-FB-pqq"/>
+                <constraint firstItem="8" firstAttribute="height" secondItem="ciH-a7-nkb" secondAttribute="height" id="UpQ-Fx-OuK"/>
+                <constraint firstItem="ciH-a7-nkb" firstAttribute="top" secondItem="8" secondAttribute="bottom" constant="8" id="ZBs-PR-clR"/>
+                <constraint firstAttribute="trailing" secondItem="ciH-a7-nkb" secondAttribute="trailing" constant="16" id="dqo-WV-Hed"/>
+                <constraint firstItem="8" firstAttribute="top" secondItem="6" secondAttribute="top" constant="20" id="p10-Uk-74t"/>
+                <constraint firstItem="ciH-a7-nkb" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="15" id="ugi-jK-df7"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

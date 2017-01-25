@@ -13,22 +13,15 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView1;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView2;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView3;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView4;
 
 @end
 
 @implementation JMOViewController
 
-- (void)viewDidLoad
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [super viewDidAppear:animated];
     
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
     self.scrollView1.delegate = self;
     [self.scrollView1 setContentSize:CGSizeMake(self.scrollView1.frame.size.width*3, self.scrollView1.frame.size.height)];
     [self.scrollView1 setScrollEnabled:YES];
@@ -37,17 +30,7 @@
     self.scrollView2.delegate = self;
     [self.scrollView2 setContentSize:CGSizeMake(self.scrollView2.frame.size.width, self.scrollView2.frame.size.height*3)];
     [self.scrollView2 setScrollEnabled:YES];
-    [self.scrollView2 enableCustomScrollIndicatorsWithScrollIndicatorType:JMOScrollIndicatorTypePageControl positions:JMOVerticalScrollIndicatorPositionLeft color:[UIColor blueColor]];
-    
-    self.scrollView3.delegate = self;
-    [self.scrollView3 setContentSize:CGSizeMake(self.scrollView3.frame.size.width, self.scrollView3.frame.size.height*3)];
-    [self.scrollView3 setScrollEnabled:YES];
-    [self.scrollView3 enableCustomScrollIndicatorsWithScrollIndicatorType:JMOScrollIndicatorTypeClassic positions:JMOVerticalScrollIndicatorPositionRight color:[UIColor purpleColor]];
-    
-    self.scrollView4.delegate = self;
-    [self.scrollView4 setContentSize:CGSizeMake(self.scrollView4.frame.size.width*3, self.scrollView4.frame.size.height)];
-    [self.scrollView4 setScrollEnabled:YES];
-    [self.scrollView4 enableCustomScrollIndicatorsWithScrollIndicatorType:JMOScrollIndicatorTypeClassic positions:JMOHorizontalScrollIndicatorPositionTop color:[UIColor orangeColor]];
+    [self.scrollView2 enableCustomScrollIndicatorsWithScrollIndicatorType:JMOScrollIndicatorTypeClassic positions:JMOVerticalScrollIndicatorPositionLeft color:[UIColor blueColor]];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
@@ -61,8 +44,6 @@
 {
     [self.scrollView1 disableCustomScrollIndicator];
     [self.scrollView2 disableCustomScrollIndicator];
-    [self.scrollView3 disableCustomScrollIndicator];
-    [self.scrollView4 disableCustomScrollIndicator];
 }
 
 @end

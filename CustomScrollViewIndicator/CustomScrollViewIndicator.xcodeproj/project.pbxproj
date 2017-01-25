@@ -17,10 +17,9 @@
 		C20CA4DD181B0D5B008DD993 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4DC181B0D5B008DD993 /* Default@2x.png */; };
 		C20CA4DF181B0D5B008DD993 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4DE181B0D5B008DD993 /* Default-568h@2x.png */; };
 		C20CA4E2181B0D5B008DD993 /* JMOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20CA4E1181B0D5B008DD993 /* JMOViewController.m */; };
-		C20CA4E5181B0D5B008DD993 /* JMOViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4E3181B0D5B008DD993 /* JMOViewController_iPhone.xib */; };
-		C20CA4E8181B0D5B008DD993 /* JMOViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20CA4E6181B0D5B008DD993 /* JMOViewController_iPad.xib */; };
 		C20CA4F0181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C20CA4EF181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m */; };
 		C20CA4F4181B9BFD008DD993 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20CA4F3181B9BFD008DD993 /* QuartzCore.framework */; };
+		C294A4C91E3901F600667C95 /* JMOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C294A4C71E3901F600667C95 /* JMOViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,11 +38,10 @@
 		C20CA4DE181B0D5B008DD993 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C20CA4E0181B0D5B008DD993 /* JMOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMOViewController.h; sourceTree = "<group>"; };
 		C20CA4E1181B0D5B008DD993 /* JMOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMOViewController.m; sourceTree = "<group>"; };
-		C20CA4E4181B0D5B008DD993 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JMOViewController_iPhone.xib; sourceTree = "<group>"; };
-		C20CA4E7181B0D5B008DD993 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JMOViewController_iPad.xib; sourceTree = "<group>"; };
 		C20CA4EE181B0DF4008DD993 /* UIScrollView+ScrollIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScrollIndicator.h"; sourceTree = "<group>"; };
 		C20CA4EF181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScrollIndicator.m"; sourceTree = "<group>"; };
 		C20CA4F3181B9BFD008DD993 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C294A4C81E3901F600667C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JMOViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +94,9 @@
 				C20CA4D8181B0D5B008DD993 /* JMOAppDelegate.m */,
 				C20CA4E0181B0D5B008DD993 /* JMOViewController.h */,
 				C20CA4E1181B0D5B008DD993 /* JMOViewController.m */,
+				C294A4C71E3901F600667C95 /* JMOViewController.xib */,
 				C20CA4EE181B0DF4008DD993 /* UIScrollView+ScrollIndicator.h */,
 				C20CA4EF181B0DF4008DD993 /* UIScrollView+ScrollIndicator.m */,
-				C20CA4E3181B0D5B008DD993 /* JMOViewController_iPhone.xib */,
-				C20CA4E6181B0D5B008DD993 /* JMOViewController_iPad.xib */,
 				C20CA4CF181B0D5B008DD993 /* Supporting Files */,
 			);
 			path = CustomScrollViewIndicator;
@@ -174,9 +171,8 @@
 				C20CA4D3181B0D5B008DD993 /* InfoPlist.strings in Resources */,
 				C20CA4DB181B0D5B008DD993 /* Default.png in Resources */,
 				C20CA4DD181B0D5B008DD993 /* Default@2x.png in Resources */,
+				C294A4C91E3901F600667C95 /* JMOViewController.xib in Resources */,
 				C20CA4DF181B0D5B008DD993 /* Default-568h@2x.png in Resources */,
-				C20CA4E5181B0D5B008DD993 /* JMOViewController_iPhone.xib in Resources */,
-				C20CA4E8181B0D5B008DD993 /* JMOViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,20 +201,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		C20CA4E3181B0D5B008DD993 /* JMOViewController_iPhone.xib */ = {
+		C294A4C71E3901F600667C95 /* JMOViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C20CA4E4181B0D5B008DD993 /* en */,
+				C294A4C81E3901F600667C95 /* en */,
 			);
-			name = JMOViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		C20CA4E6181B0D5B008DD993 /* JMOViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C20CA4E7181B0D5B008DD993 /* en */,
-			);
-			name = JMOViewController_iPad.xib;
+			name = JMOViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
